@@ -5,9 +5,9 @@
 * Comments:          Some global constants                                         
 * JDK version used:  JDK1.6                             
 * Namespace:         Util                              
-* Author：                              Hun                
+* Author：                              Vincent                
 * Create Date：                2013-03-09
-* Modified By：                Hun                                      
+* Modified By：                Vincent                                      
 * Modified Date:     2013-03-18                  
 * Version:           V3.4                       
 */ 
