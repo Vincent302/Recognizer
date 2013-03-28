@@ -25,7 +25,7 @@ import BP.BP;
 import ImageTool.ImageProcessor;
 import Util.Global;
 
-public class Trainer {
+public class Trainer{
 	public static void main(String [] args){
 		long start_time = System.currentTimeMillis();
 		
@@ -33,53 +33,55 @@ public class Trainer {
 		int letter_number = Global.LETTER_NUMBER;
 		BP bp_province = new BP(Global.PROVINCE_BP_INPUT_LENGTH, Global.PROVINCE_HIDDEN_LAYER_NUMBER, province_number);
 		BP bp_letter = new BP(Global.LETTER_BP_INPUT_LENGTH, Global.LETTER_HIDDEN_LAYER_NUMBER, letter_number);
-		BufferedImage [] province_images = new BufferedImage[province_number];
-		BufferedImage [] letter_images = new BufferedImage[letter_number];
+		BufferedImage [][] province_images = new BufferedImage[province_number][Global.NOISE];
+		BufferedImage [][] letter_images = new BufferedImage[letter_number][Global.NOISE];
 		
 		for(int noise=0;noise<Global.NOISE;noise++){
 			//Initiate image.
 			try {
 				for(int i=0;i<province_number;i++){
-					province_images[i] = ImageIO.read(new File("car_img/province/" + i + "_" + noise + ".png"));
+					province_images[i][noise] = ImageIO.read(new File("car_img/province/" + i + "_" + noise + ".png"));
 				}
 				for(int i=0;i<letter_number;i++){
-					letter_images[i] = ImageIO.read(new File("car_img/letter/" + i + "_" + noise + ".png"));
+					letter_images[i][noise] = ImageIO.read(new File("car_img/letter/" + i + "_" + noise + ".png"));
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+		}
 			
-			
-			//Train province.
-			for(int t=0;t<Global.PROVINCE_TRAINING_TIME;t++){
-				for(int i=0;i<province_number;i++){
+		//Train province.
+		for(int t=0;t<Global.PROVINCE_TRAINING_TIME;t++){
+			for(int i=0;i<province_number;i++){
+				for(int noise=0;noise<Global.NOISE;noise++){
 					double [] answer = new double [province_number];
 					for(int k=0;k<province_number;k++){
 						answer[k] = 0;
 					}
 					answer[i] = 1;
-		            double [] bp_input_array = ImageProcessor.getProvinceBPInputArray(province_images[i]);
+		            double [] bp_input_array = ImageProcessor.getProvinceBPInputArray(province_images[i][noise]);
 		            bp_province.train(bp_input_array, answer);
 				}
-				System.out.println("Province training: " + t + "noise_" + noise);
 			}
-			
-			//Train letter.
-			for(int t=0;t<Global.LETTER_TRAINING_TIME;t++){
-				for(int i=0;i<letter_number;i++){
+			System.out.println("Province training: " + t);
+		}
+		
+		//Train letter.
+		for(int t=0;t<Global.LETTER_TRAINING_TIME;t++){
+			for(int i=0;i<letter_number;i++){
+				for(int noise=0;noise<Global.NOISE;noise++){
 					double [] answer = new double [letter_number];
 					for(int k=0;k<letter_number;k++){
 						answer[k] = 0;
 					}
 					answer[i] = 1;
-		            double [] bp_input_array = ImageProcessor.getLetterBPInputArray(letter_images[i]);
+		            double [] bp_input_array = ImageProcessor.getLetterBPInputArray(letter_images[i][noise]);
 		            bp_letter.train(bp_input_array, answer);
 				}
-				System.out.println("Letter training: " + t + "noise_" + noise);
 			}
-			System.out.println("Training noise : " + noise);
+			System.out.println("Letter training: " + t);
 		}
-		
+			
 		//Store weight.
 		bp_province.storeWeight(Global.PROVINCE_WEIGHT_FILE_PATH);
 		bp_letter.storeWeight(Global.LETTER_WEIGHT_FILE_PATH);

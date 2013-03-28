@@ -100,7 +100,5 @@ public class TesterSingle {
 		}
 		System.out.println("Provincr right rate: " +  province_right_count + "/" + province_number*Global.NOISE);
 		System.out.println("Letter Right rate: " +  letter_right_count + "/" + letter_number*Global.NOISE);
-		
-		
 	}
 }
