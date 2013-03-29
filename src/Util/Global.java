@@ -69,7 +69,7 @@ public class Global {
 	public static int LETTER_BP_INPUT_LENGTH = LETTER_X_NUMBER * LETTER_Y_NUMBER;
 	
 	//Block white rate percentage.
-	public static double BLOCK_WHITE_PERCENTAGE_PROVINCE = 0.2;
+	public static double BLOCK_WHITE_PERCENTAGE_PROVINCE = 0.3;
 	public static double BLOCK_WHITE_PERCENTAGE_LETTER = 0.2;
 	
 	//The number of province and letter
