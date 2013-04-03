@@ -81,8 +81,8 @@ public class Global {
 	public static int LETTER_HIDDEN_LAYER_NUMBER = 50;
 	
 	//Training time.
-	public static int PROVINCE_TRAINING_TIME = 100000;
-	public static int LETTER_TRAINING_TIME = 100000;
+	public static int PROVINCE_TRAINING_TIME = 5000000;
+	public static int LETTER_TRAINING_TIME = 5000000;
 	
 	//Weight file path.
 	public static String PROVINCE_WEIGHT_FILE_PATH = "data/province_weight";
