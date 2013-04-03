@@ -24,7 +24,7 @@ import javax.imageio.ImageIO;
 public class TesterComplete {
 	public static void main(String [] args){
 		
-		int test_image_number = 2;
+		int test_image_number = 6;
 		BufferedImage [] buffered_car_image = new BufferedImage[test_image_number];
 		
 		try {
@@ -53,7 +53,30 @@ public class TesterComplete {
 		}else{
 			System.out.println("Answer is: " + "沪H33029" + " And Resule Is : " + car_number_result[1] + "___" + "Wrong!!!");
 		}
-		
+		if(car_number_result[2].equals("沪A04A22")){
+			System.out.println("Answer is: " + "沪A04A22" + " And Resule Is : " + car_number_result[2] + "___" + "Right!!!");
+			right_count++;
+		}else{
+			System.out.println("Answer is: " + "沪A04A22" + " And Resule Is : " + car_number_result[2] + "___" + "Wrong!!!");
+		}
+		if(car_number_result[3].equals("鲁BNS376")){
+			System.out.println("Answer is: " + "鲁BNS376" + " And Resule Is : " + car_number_result[3] + "___" + "Right!!!");
+			right_count++;
+		}else{
+			System.out.println("Answer is: " + "鲁BNS376" + " And Resule Is : " + car_number_result[3] + "___" + "Wrong!!!");
+		}
+		if(car_number_result[4].equals("沪A428A6")){
+			System.out.println("Answer is: " + "沪A428A6" + " And Resule Is : " + car_number_result[4] + "___" + "Right!!!");
+			right_count++;
+		}else{
+			System.out.println("Answer is: " + "沪A428A6" + " And Resule Is : " + car_number_result[4] + "___" + "Wrong!!!");
+		}
+		if(car_number_result[5].equals("沪A272S7")){
+			System.out.println("Answer is: " + "沪A272S7" + " And Resule Is : " + car_number_result[5] + "___" + "Right!!!");
+			right_count++;
+		}else{
+			System.out.println("Answer is: " + "沪A272S7" + " And Resule Is : " + car_number_result[5] + "___" + "Wrong!!!");
+		}
 		
 		
 		System.out.println();
