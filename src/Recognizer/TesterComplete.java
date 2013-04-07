@@ -42,40 +42,40 @@ public class TesterComplete {
 		
 		int right_count = 0;
 		if(car_number_result[0].equals("沪A559B8")){
-			System.out.println("Answer is: " + "沪A559B8" + " And Resule Is : " + car_number_result[0] + "___" + "Right!!!");
+			System.out.println("Answer is: " + "沪A559B8" + " And Result Is : " + car_number_result[0] + "___" + "Right!!!");
 			right_count++;
 		}else{
-			System.out.println("Answer is: " + "沪A559B8" + " And Resule Is : " + car_number_result[0] + "___" + "Wrong!!!");
+			System.out.println("Answer is: " + "沪A559B8" + " And Result Is : " + car_number_result[0] + "___" + "Wrong!!!");
 		}
 		if(car_number_result[1].equals("沪H33029")){
-			System.out.println("Answer is: " + "沪H33029" + " And Resule Is : " + car_number_result[1] + "___" + "Right!!!");
+			System.out.println("Answer is: " + "沪H33029" + " And Result Is : " + car_number_result[1] + "___" + "Right!!!");
 			right_count++;
 		}else{
-			System.out.println("Answer is: " + "沪H33029" + " And Resule Is : " + car_number_result[1] + "___" + "Wrong!!!");
+			System.out.println("Answer is: " + "沪H33029" + " And Result Is : " + car_number_result[1] + "___" + "Wrong!!!");
 		}
 		if(car_number_result[2].equals("沪A04A22")){
-			System.out.println("Answer is: " + "沪A04A22" + " And Resule Is : " + car_number_result[2] + "___" + "Right!!!");
+			System.out.println("Answer is: " + "沪A04A22" + " And Result Is : " + car_number_result[2] + "___" + "Right!!!");
 			right_count++;
 		}else{
-			System.out.println("Answer is: " + "沪A04A22" + " And Resule Is : " + car_number_result[2] + "___" + "Wrong!!!");
+			System.out.println("Answer is: " + "沪A04A22" + " And Result Is : " + car_number_result[2] + "___" + "Wrong!!!");
 		}
 		if(car_number_result[3].equals("鲁BNS376")){
-			System.out.println("Answer is: " + "鲁BNS376" + " And Resule Is : " + car_number_result[3] + "___" + "Right!!!");
+			System.out.println("Answer is: " + "鲁BNS376" + " And Result Is : " + car_number_result[3] + "___" + "Right!!!");
 			right_count++;
 		}else{
-			System.out.println("Answer is: " + "鲁BNS376" + " And Resule Is : " + car_number_result[3] + "___" + "Wrong!!!");
+			System.out.println("Answer is: " + "鲁BNS376" + " And Result Is : " + car_number_result[3] + "___" + "Wrong!!!");
 		}
 		if(car_number_result[4].equals("沪A428A6")){
-			System.out.println("Answer is: " + "沪A428A6" + " And Resule Is : " + car_number_result[4] + "___" + "Right!!!");
+			System.out.println("Answer is: " + "沪A428A6" + " And Result Is : " + car_number_result[4] + "___" + "Right!!!");
 			right_count++;
 		}else{
-			System.out.println("Answer is: " + "沪A428A6" + " And Resule Is : " + car_number_result[4] + "___" + "Wrong!!!");
+			System.out.println("Answer is: " + "沪A428A6" + " And Result Is : " + car_number_result[4] + "___" + "Wrong!!!");
 		}
 		if(car_number_result[5].equals("沪A272S7")){
-			System.out.println("Answer is: " + "沪A272S7" + " And Resule Is : " + car_number_result[5] + "___" + "Right!!!");
+			System.out.println("Answer is: " + "沪A272S7" + " And Result Is : " + car_number_result[5] + "___" + "Right!!!");
 			right_count++;
 		}else{
-			System.out.println("Answer is: " + "沪A272S7" + " And Resule Is : " + car_number_result[5] + "___" + "Wrong!!!");
+			System.out.println("Answer is: " + "沪A272S7" + " And Result Is : " + car_number_result[5] + "___" + "Wrong!!!");
 		}
 		
 		
