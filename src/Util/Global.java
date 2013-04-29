@@ -17,6 +17,11 @@ package Util;
 
 public class Global {
 	
+	
+	//Some rate
+	public static double LEARNING_RATE = 0.25;
+	public static double MOMENTUM = 0.8;
+	
 	//Picture size.
 	public static int CARD_WIDTH = 320;
 	public static int CARD_HEIGHT = 100;

@@ -26,7 +26,7 @@ import java.io.IOException;
 import java.util.Random;  
 
 import Interface.IBP;
-import Util.Const;
+import Util.Global;
   
 public class BP implements IBP{
 	
@@ -94,7 +94,7 @@ public class BP implements IBP{
      * @param output_size 
      */  
     public BP(int input_size, int hidden_size, int output_size){
-        this(input_size, hidden_size, output_size, Const.LEARNING_RATE, Const.MONUMENT);  
+        this(input_size, hidden_size, output_size, Global.LEARNING_RATE, Global.MOMENTUM);  
     }  
     
     
