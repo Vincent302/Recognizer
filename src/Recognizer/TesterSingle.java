@@ -70,6 +70,8 @@ public class TesterSingle {
 	            }
 	            if(i == index){
 	            	province_right_count++;
+	            }else{
+	            	System.out.println("****************************** Wrong_Output ***********************************");
 	            }
 	            System.out.println("Province " + i + " : " + index + " ___ " + max_value);
 			}
@@ -90,6 +92,8 @@ public class TesterSingle {
 	            }
 	            if(i == index){
 	            	letter_right_count++;
+	            }else{
+	            	System.out.println("****************************** Wrong_Output ***********************************");
 	            }
 	            System.out.println("Letter " + i + " : " + index + " ___ " + max_value);
 			}
