@@ -1,3 +1,15 @@
+/**                          
+* Project:           Recognizer                                
+* Comments:          Image type converter                                            
+* JDK version used:  JDK1.6                             
+* Namespace:         BP                              
+* Author：                              Vincent Li             
+* Create Date：                2013-03-09
+* Modified By：                Vincent Li                                     
+* Modified Date:     2013-05-01                  
+* Version:           V3.4                       
+*/ 
+
 package Other;
 
 import java.awt.image.BufferedImage;

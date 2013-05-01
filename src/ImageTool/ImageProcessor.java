@@ -98,13 +98,13 @@ public class ImageProcessor implements IImageProcessor{
 		
 		//Test binary transformation.
 		
-		
+		/*
 		try {
 			ImageIO.write(buffered_image, "png", new File("temp/all.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+		*/
 	}
 
 	
@@ -159,6 +159,7 @@ public class ImageProcessor implements IImageProcessor{
 		
 		
 		//Test image binary.
+		/*
 		try {
 			for(int i=0;i<7;i++){
 				ImageIO.write(buffered_image_array[i], "png", new File("temp/"+ i + ".png"));
@@ -166,6 +167,7 @@ public class ImageProcessor implements IImageProcessor{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		*/
 	}
 
 	
