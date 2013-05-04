@@ -27,7 +27,7 @@ public class Global {
 	public static int CARD_HEIGHT = 100;
 	
 	//Dividing line of R+G+B.
-	public static int BINARY_ADJUSTOR = 300;
+	public static int BINARY_ADJUSTOR = 350;
 	
 	//Letter size.
 	public static int PROVINCE_IMAGE_WIDTH = 24;
@@ -54,7 +54,7 @@ public class Global {
 	public static int LETTER_4_TOP = 16;
 	public static int LETTER_5_LEFT = 234;
 	public static int LETTER_5_TOP = 15;
-	public static int LETTER_6_LEFT = 277;
+	public static int LETTER_6_LEFT = 275;
 	public static int LETTER_6_TOP = 18;
 	
 	//Block size.
