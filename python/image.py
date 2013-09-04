@@ -3,6 +3,7 @@
 import Image
 import ImageDraw
 import os
+import string
 
 for i in range(0,37):
 	temp_img = Image.open(str(i) + ".png")
